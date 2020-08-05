@@ -6,14 +6,6 @@
 
 <p align="center">
   <a href="https://github.com/lpmatos/glabby">
-    <img alt="Open Source" src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102">
-  </a>
-
-  <a href="https://github.com/lpmatos/glabby/graphs/contributors">
-    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/lpmatos/glabby">
-  </a>
-
-  <a href="https://github.com/lpmatos/glabby">
     <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/lpmatos/glabby">
   </a>
 
@@ -31,10 +23,6 @@
 
   <a href="https://github.com/lpmatos/glabby">
     <img alt="Repository Size" src="https://img.shields.io/github/repo-size/lpmatos/glabby">
-  </a>
-
-  <a href="https://github.com/lpmatos/glabby/issues">
-    <img alt="Repository Issues" src="https://img.shields.io/github/issues/lpmatos/glabby">
   </a>
 
   <a href="https://github.com/lpmatos/glabby/blob/master/LICENSE">
