@@ -4,8 +4,6 @@
 
 <h1 align="center">Welcome to Glabby repository</h1>
 
-> Glabby is a CLI to interact with your pipeline (Make complience to block jobs in pipeline...)
-
 <p align="center">
   <a href="https://github.com/lpmatos/glabby">
     <img alt="Open Source" src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102">
@@ -43,6 +41,8 @@
     <img alt="MIT License" src="https://img.shields.io/github/license/lpmatos/glabby">
   </a>
 </p>
+
+> Glabby is a CLI to interact with your pipeline (Make complience to block jobs in pipeline...)
 
 ## Menu
 
