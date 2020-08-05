@@ -1,0 +1,15 @@
+# ignored by docker build system
+.git*
+
+Dockerfile
+.dockerignore
+
+Makefile
+LICENSE
+
+*.js
+*.yml
+*.json
+*.md
+
+bin/

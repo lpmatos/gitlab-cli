@@ -1,0 +1,47 @@
+version: "3.8"
+
+# ==============================================================================
+# ANCHORS
+# ==============================================================================
+
+x-logging: &default-logging
+  driver: "json-file"
+  options:
+    max-size: "500k"
+    max-file: "20"
+
+x-entrypoint: &default-entrypoint
+  entrypoint: >
+    /bin/sh -c "
+      set -e
+      echo Inside container by Docker Compose
+      /bin/bash || exit 0
+    "
+# ==============================================================================
+# SERVICES
+# ==============================================================================
+
+services:
+
+  glabby:
+    container_name: glabby
+    env_file: [ "./.env-exemple" ]
+    environment:
+      SONAR_URL: ${SONAR_URL}
+      SONAR_TOKEN: ${SONAR_TOKEN}
+      SONAR_PROJECT_KEY: ${SONAR_PROJECT_KEY}
+      BLOCK_SONAR: ${BLOCK_SONAR}
+      BLOCK_SPEEDIO: ${BLOCK_SPEEDIO}
+      BLOCK_LYNIS: ${BLOCK_LYNIS}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    <<: *default-entrypoint
+    stdin_open: true
+    tty: true
+    restart: on-failure
+    logging: *default-logging
+    networks: [ "glabby" ]
+
+networks:
+  glabby:
