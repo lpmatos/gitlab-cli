@@ -7,7 +7,7 @@ import (
 )
 
 // Current const
-const version = "1.3.0"
+const version = "1.0.0"
 
 // AddVersionCommand function - top level command.
 func AddVersionCommand(topLevel *cobra.Command) {
