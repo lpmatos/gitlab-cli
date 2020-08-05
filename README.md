@@ -4,7 +4,45 @@
 
 <h1 align="center">Welcome to Glabby repository</h1>
 
-> Glabby is a CLI to interact with yout pipeline (Make complience to block jobs in pipeline...)
+> Glabby is a CLI to interact with your pipeline (Make complience to block jobs in pipeline...)
+
+<p align="center">
+  <a href="https://github.com/lpmatos/glabby">
+    <img alt="Open Source" src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102">
+  </a>
+
+  <a href="https://github.com/lpmatos/glabby/graphs/contributors">
+    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/lpmatos/glabby">
+  </a>
+
+  <a href="https://github.com/lpmatos/glabby">
+    <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/lpmatos/glabby">
+  </a>
+
+  <a href="https://github.com/lpmatos/glabby">
+    <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/lpmatos/glabby">
+  </a>
+
+  <a href="https://github.com/lpmatos/glabby/stargazers">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/lpmatos/glabby?style=social">
+  </a>
+
+  <a href="https://github.com/lpmatos/glabby/commits/master">
+    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/lpmatos/glabby">
+  </a>
+
+  <a href="https://github.com/lpmatos/glabby">
+    <img alt="Repository Size" src="https://img.shields.io/github/repo-size/lpmatos/glabby">
+  </a>
+
+  <a href="https://github.com/lpmatos/glabby/issues">
+    <img alt="Repository Issues" src="https://img.shields.io/github/issues/lpmatos/glabby">
+  </a>
+
+  <a href="https://github.com/lpmatos/glabby/blob/master/LICENSE">
+    <img alt="MIT License" src="https://img.shields.io/github/license/lpmatos/glabby">
+  </a>
+</p>
 
 ## Menu
 
@@ -51,6 +89,68 @@ This project builds a simple CLI to interact with your GitLab pipeline.
 
 ```sh
 go get github.com/lpmatos/glabby
+```
+
+## Usage
+
+#### Global
+
+```text
+   ____   _           _       _
+  / ___| | |   __ _  | |__   | |__    _   _
+ | |  _  | |  / _` | | '_ \  | '_ \  | | | |
+ | |_| | | | | (_| | | |_) | | |_) | | |_| |
+  \____| |_|  \__,_| |_.__/  |_.__/   \__, |
+                                      |___/
+Description:
+
+Glabby is a CLI library to interact with your pipeline and make/analyze some stuffs.
+
+Usage:
+  glabby [command]
+
+Available Commands:
+  compliance  Run compliance in pipeline
+  help        Help about any command
+  version     Version outputs the version of CLI
+
+Flags:
+  -h, --help      help for glabby
+  -s, --silence   enable silence mod without logs in stdout terminal.
+
+Use "glabby [command] --help" for more information about a command.
+```
+
+#### Complience
+
+```text
+   ____   _           _       _
+  / ___| | |   __ _  | |__   | |__    _   _
+ | |  _  | |  / _` | | '_ \  | '_ \  | | | |
+ | |_| | | | | (_| | | |_) | | |_) | | |_| |
+  \____| |_|  \__,_| |_.__/  |_.__/   \__, |
+                                      |___/
+Description:
+
+Compliance to your GitLab pipeline.
+
+Usage:
+  glabby compliance [command]
+
+Aliases:
+  compliance, c
+
+Available Commands:
+  sonar       Run sonar compliance
+  speedio     Run speedio compliance
+
+Flags:
+  -h, --help   help for compliance
+
+Global Flags:
+  -s, --silence   enable silence mod without logs in stdout terminal.
+
+Use "glabby compliance [command] --help" for more information about a command.
 ```
 
 ## Commit Lint
@@ -154,6 +254,34 @@ Once you have conventional commits, you can make use of them with the next tool.
 * updates CHANGELOG.md file with the new version and list of changes
 * commits both changes and tags them with the new version
 
+## Dockle
+
+Container Image Linter for Security, Helping build the Best-Practice Docker Image, Easy to start
+
+`Dockle` helps you:
+
+1. Build [Best Practice](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) Docker images
+2. Build secure Docker images
+    - Checkpoints includes [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks/)
+
+BasicAuth server needs `DOCKLE_USERNAME` and `DOCKLE_PASSWORD`.
+
+```bash
+export DOCKLE_USERNAME={USERNAME}
+export DOCKLE_PASSWORD={PASSWORD}
+
+# if you'd like to use 80 port, use NonSSL
+export DOCKLE_NON_SSL=true
+```
+
+Run command:
+
+```bash
+dockle --username ${DOCKLE_USERNAME} --password ${DOCKLE_PASSWORD} -o results.json -f json -c 1 -l warn -d registry
+```
+
+For more information access [Dockle](https://github.com/goodwithtech/dockle).
+
 ## How to contribute
 
 1. Make a **Fork**.
@@ -175,6 +303,33 @@ git commit -m "Added - Fixing somethings"
 git push origin master
 ```
 
+## Versioning
+
+- [CHANGELOG](CHANGELOG.md)
+
+## License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
+## Author
+
+👤 **Lucca Pessoa**
+
+Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
+
+> * Email: luccapsm@gmail.com
+> * Website: https://github.com/lpmatos
+> * Github: [@lpmatos](https://github.com/lpmatos)
+> * LinkedIn: [@luccapessoa](https://www.linkedin.com/in/lucca-pessoa-4abb71138/)
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
+
+## Project Status
+
+* ✔️ Finish
+
+---
+
+<p align="center">Make with ❤️ by <strong>Lucca Pessoa :wave:</p>
